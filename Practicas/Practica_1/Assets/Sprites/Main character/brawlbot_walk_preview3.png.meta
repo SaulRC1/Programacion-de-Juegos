@@ -1,0 +1,898 @@
+fileFormatVersion: 2
+guid: 51e95dee99752b646b3a15e67b68c0b4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 203
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ce7e403b03940478f93af8b2627ba1
+      internalID: 1930943323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 919
+        width: 203
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163a0846e0c31614c90cc2d9045aaa46
+      internalID: -1245932897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 925
+        width: 201
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc88cb484e29e3748b3ab1fe982ea226
+      internalID: -665371730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 924
+        width: 204
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed0841bcd40d9640bb156f1baee6389
+      internalID: -1516836822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_4
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 924
+        width: 198
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a7142dbd89ab04db3e71eee7d4af22
+      internalID: -1906981597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_5
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 924
+        width: 204
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9d93078ca868740a8d7760a813304a
+      internalID: 38606078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 206
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c045bed3ff80899428a4a19552c719a8
+      internalID: 627631332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 739
+        width: 199
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6eca57b56cae34f87119acadf61327
+      internalID: 641106089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_8
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 736
+        width: 206
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed91596a3b082f843ac6df692c6b287c
+      internalID: 1552974312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_9
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 739
+        width: 200
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e19d9d69f9a9e54981988a9d353b778
+      internalID: -1108562658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_10
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 740
+        width: 200
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f77f1c2fec137468f1470bf46433d9
+      internalID: -605882519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_11
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 739
+        width: 203
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf025424c9b1df1429013d0e3a089e6b
+      internalID: 2066124146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 204
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2b6cbf805e3f74d96ee6d77335eabd
+      internalID: -1910000554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 552
+        width: 197
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909cdbd3db401654098f105d043fa429
+      internalID: -58628968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_14
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 552
+        width: 197
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47c078f76b7f0349ac399be80fa5b5f
+      internalID: 1771967392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_15
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 556
+        width: 206
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e438d140b7baebb4e94388541d1ee478
+      internalID: 1691154074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_16
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 554
+        width: 205
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb6c46ce07a20f4d8377f8d876e5149
+      internalID: 589656831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_17
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 553
+        width: 196
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b90a9319465fe6438e6d688aa3082d6
+      internalID: -1486452625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 201
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeed47fc1e33d4c4cbe6833e2961953c
+      internalID: -435471283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_19
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 372
+        width: 200
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5770f63546658144aa28d7fb8ab3661a
+      internalID: 725691607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 369
+        width: 203
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df401af44e80a8941908da1248cfaadf
+      internalID: -2121958548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_21
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 369
+        width: 202
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864ae38d019ca184ba1be32ed882b123
+      internalID: 1246265530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_22
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 368
+        width: 199
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e49e27780653a40a2a473d341cae62
+      internalID: 570553467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_23
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 371
+        width: 204
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69375467e69c744cb5db119725a599e
+      internalID: -1385909021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 199
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5da4dadab514342be43c16e9b37973
+      internalID: 1026644684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 184
+        width: 204
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5712704b9452d3c41a6136e3185203a9
+      internalID: 241095460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_26
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 185
+        width: 200
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a8c58a6ac1f5440859954106353e3e
+      internalID: 1996034370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_27
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 185
+        width: 201
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908034e780dae2e42a594d9adacd4bad
+      internalID: -294663534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_28
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 186
+        width: 199
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e06c1b50f78e054cb82607d9ad18261
+      internalID: -1509368643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_29
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 184
+        width: 201
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33babe73b53f8f4682dfed34c5c9db4
+      internalID: 1393219286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 203
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c31c39b5d03b448a94a3352c498c5f
+      internalID: -794061051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 202
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4598a66a74806e642ac49311e7d1e807
+      internalID: 429628351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_32
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2
+        width: 201
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fc62b0f9dc5e44fbddfcc983aeac97
+      internalID: 759068767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_33
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 3
+        width: 202
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07698e51c40049429717748e3eb6076
+      internalID: -140818097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_walk_preview3_34
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1
+        width: 202
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aae5da1febe30c4d8b183b2bc0ffe13
+      internalID: -1506365832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      brawlbot_walk_preview3_0: 1930943323
+      brawlbot_walk_preview3_1: -1245932897
+      brawlbot_walk_preview3_10: -605882519
+      brawlbot_walk_preview3_11: 2066124146
+      brawlbot_walk_preview3_12: -1910000554
+      brawlbot_walk_preview3_13: -58628968
+      brawlbot_walk_preview3_14: 1771967392
+      brawlbot_walk_preview3_15: 1691154074
+      brawlbot_walk_preview3_16: 589656831
+      brawlbot_walk_preview3_17: -1486452625
+      brawlbot_walk_preview3_18: -435471283
+      brawlbot_walk_preview3_19: 725691607
+      brawlbot_walk_preview3_2: -665371730
+      brawlbot_walk_preview3_20: -2121958548
+      brawlbot_walk_preview3_21: 1246265530
+      brawlbot_walk_preview3_22: 570553467
+      brawlbot_walk_preview3_23: -1385909021
+      brawlbot_walk_preview3_24: 1026644684
+      brawlbot_walk_preview3_25: 241095460
+      brawlbot_walk_preview3_26: 1996034370
+      brawlbot_walk_preview3_27: -294663534
+      brawlbot_walk_preview3_28: -1509368643
+      brawlbot_walk_preview3_29: 1393219286
+      brawlbot_walk_preview3_3: -1516836822
+      brawlbot_walk_preview3_30: -794061051
+      brawlbot_walk_preview3_31: 429628351
+      brawlbot_walk_preview3_32: 759068767
+      brawlbot_walk_preview3_33: -140818097
+      brawlbot_walk_preview3_34: -1506365832
+      brawlbot_walk_preview3_35: -1904623199
+      brawlbot_walk_preview3_4: -1906981597
+      brawlbot_walk_preview3_5: 38606078
+      brawlbot_walk_preview3_6: 627631332
+      brawlbot_walk_preview3_7: 641106089
+      brawlbot_walk_preview3_8: 1552974312
+      brawlbot_walk_preview3_9: -1108562658
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

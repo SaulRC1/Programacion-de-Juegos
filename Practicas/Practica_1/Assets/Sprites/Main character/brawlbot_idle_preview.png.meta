@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: b3dce75e708e25244b3ac14f2219f8a9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1274
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9018f8e364e55e246ae3c4db75c89d7d
+      internalID: -48129366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1274
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9740f1f575a914db6f6b60d5af55f6
+      internalID: 36052593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1274
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae87e3bb39c4cb74796ed5e6dec90145
+      internalID: 1611919951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1274
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d998ecac05129e64babd140bf9edc429
+      internalID: 750591417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_4
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1274
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d88a7db3462ae42b3d5a61dbeacaa9
+      internalID: 387522697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_5
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1274
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac48e0747ffd2f498d75feaaa2cc1c5
+      internalID: 1410204688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1092
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7453269437c094284519feae786c6c
+      internalID: 1238686909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1092
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815a49d1c83737d48bf8c0076adeedb4
+      internalID: -919985846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_8
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1092
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6a4dca85baaec40974535afed8949c
+      internalID: -203693028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1092
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c843a65bdc311448fd5098d1e35ad6
+      internalID: -1642440821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_10
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1092
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779135f32f459ed4cae15a41a95ebbdb
+      internalID: 393537135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_11
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1092
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8984ae8f442cd47b5eca19b93678d4
+      internalID: 458432196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cc8607493d729418e56b3df3834051
+      internalID: 1836165005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 910
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f94db5aaf115074ca4a424058cf917f
+      internalID: 66558168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 910
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2daf4f310463a47a0a273681c27fb4
+      internalID: 2013096932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 910
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27a6aeba6dc2c640a587d8febcc891e
+      internalID: 540983791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_16
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 910
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40f55ede2d41d04f8bd88fa57d1d3ac
+      internalID: 181836834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_17
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 910
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a34ed91498d134f92ec7f9d7227545
+      internalID: 1681128550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b19e8fd334cd84cb828f319a4d87d3
+      internalID: -738488548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 728
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f343dbe5f73d145830639106fd5727
+      internalID: -1362087846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_20
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 728
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad64dd93391bd54fa57f66a4ca3bb8d
+      internalID: -142338624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_21
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 728
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6f1d9c011cae64193a64fcd09d950c
+      internalID: 1724788588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_22
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 728
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954e50a031f43844a70a49be886ed1c
+      internalID: -536004664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_23
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 728
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd0a799edcb3004195159af717f3344
+      internalID: -833019264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32782d5054576234da4c3b0c08b01440
+      internalID: -984098485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 546
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a996b66fd60c0408d1f61d6332ea82
+      internalID: -1256204362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 546
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e8ebf63b532d74cb5bca5894f95e53
+      internalID: 1370064922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_27
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 546
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eeac40424fa764eb41af6582e00894
+      internalID: 159243935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_28
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 546
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a2a9cfc8d931f4fac81bc31fc99d50
+      internalID: 79802501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_29
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 546
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9770146db4d8d4bb82ad561e2b81b3
+      internalID: 1706607458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512fb574bbee47a45874c0e1d835517e
+      internalID: 1824677750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_31
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 364
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f653bb58909605f45a19f5a41a8e4380
+      internalID: 1653530106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_32
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 364
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf6140825f439c46aecf6fd3021a19c
+      internalID: 202794070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_33
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 364
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d5576626315e24fbce0be2f705c562
+      internalID: 572108669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_34
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 364
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f9cb6f3cd151340acb072627c5b216
+      internalID: -1010916523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_35
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 364
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d0d49d76f2837428313e3b3704ff29
+      internalID: -1903062636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5865d5a3280a19849ad126a4f638793d
+      internalID: -333076199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 182
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff287236f841d544bbf7be2065eb3ba
+      internalID: 2096276340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_38
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 182
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9175f342679324438114aa5236a2b83
+      internalID: 2047071072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_39
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 182
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04932e7c7e7eafc47a8b0aaa7892278b
+      internalID: -817893845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_40
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 182
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eae3ba676bd1b0489582e78250602db
+      internalID: 1139487085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_41
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 182
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa02c459c421a414ab9b1d7661bbf9ea
+      internalID: 761805075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01d2eec80ceb1e49a0e6f70d9cf17e1
+      internalID: -258376653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497772c29a8751d4aa69eb72b9604397
+      internalID: 2021858844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_44
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf8d417e7740b74f92b1c2b8019d6ed
+      internalID: 1493199103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_45
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed5e2116b731a648850db6953acc98b
+      internalID: 591122928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_46
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0b66bb554549a499e54370bddc2254
+      internalID: 34798955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brawlbot_idle_preview_47
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c54c2dab9d17ab488fbac16be0d20fd
+      internalID: 963019950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      brawlbot_idle_preview_0: -48129366
+      brawlbot_idle_preview_1: 36052593
+      brawlbot_idle_preview_10: 393537135
+      brawlbot_idle_preview_11: 458432196
+      brawlbot_idle_preview_12: 1836165005
+      brawlbot_idle_preview_13: 66558168
+      brawlbot_idle_preview_14: 2013096932
+      brawlbot_idle_preview_15: 540983791
+      brawlbot_idle_preview_16: 181836834
+      brawlbot_idle_preview_17: 1681128550
+      brawlbot_idle_preview_18: -738488548
+      brawlbot_idle_preview_19: -1362087846
+      brawlbot_idle_preview_2: 1611919951
+      brawlbot_idle_preview_20: -142338624
+      brawlbot_idle_preview_21: 1724788588
+      brawlbot_idle_preview_22: -536004664
+      brawlbot_idle_preview_23: -833019264
+      brawlbot_idle_preview_24: -984098485
+      brawlbot_idle_preview_25: -1256204362
+      brawlbot_idle_preview_26: 1370064922
+      brawlbot_idle_preview_27: 159243935
+      brawlbot_idle_preview_28: 79802501
+      brawlbot_idle_preview_29: 1706607458
+      brawlbot_idle_preview_3: 750591417
+      brawlbot_idle_preview_30: 1824677750
+      brawlbot_idle_preview_31: 1653530106
+      brawlbot_idle_preview_32: 202794070
+      brawlbot_idle_preview_33: 572108669
+      brawlbot_idle_preview_34: -1010916523
+      brawlbot_idle_preview_35: -1903062636
+      brawlbot_idle_preview_36: -333076199
+      brawlbot_idle_preview_37: 2096276340
+      brawlbot_idle_preview_38: 2047071072
+      brawlbot_idle_preview_39: -817893845
+      brawlbot_idle_preview_4: 387522697
+      brawlbot_idle_preview_40: 1139487085
+      brawlbot_idle_preview_41: 761805075
+      brawlbot_idle_preview_42: -258376653
+      brawlbot_idle_preview_43: 2021858844
+      brawlbot_idle_preview_44: 1493199103
+      brawlbot_idle_preview_45: 591122928
+      brawlbot_idle_preview_46: 34798955
+      brawlbot_idle_preview_47: 963019950
+      brawlbot_idle_preview_5: 1410204688
+      brawlbot_idle_preview_6: 1238686909
+      brawlbot_idle_preview_7: -919985846
+      brawlbot_idle_preview_8: -203693028
+      brawlbot_idle_preview_9: -1642440821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
