@@ -9,6 +9,7 @@ public class MovimientoJugador : MonoBehaviour
     private float horizontalInput;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float velocidad;
+    [SerializeField] private float jumpPower;
 
     private void Awake()
     {
@@ -44,7 +45,7 @@ public class MovimientoJugador : MonoBehaviour
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, velocidad);
+        body.velocity = new Vector2(body.velocity.x, jumpPower);
         animator.SetTrigger("jump");
     }
 
