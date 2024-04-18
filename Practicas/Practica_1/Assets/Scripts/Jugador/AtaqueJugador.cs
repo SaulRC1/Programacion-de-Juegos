@@ -5,6 +5,7 @@ public class AtaqueJugador : MonoBehaviour
     [SerializeField] private float attackCoolDown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] plasmaBalls;
+
     private Animator animator;
     private MovimientoJugador movimientoJugador;
     private float coolDownTimer = Mathf.Infinity;
@@ -29,7 +30,6 @@ public class AtaqueJugador : MonoBehaviour
     {
         animator.SetTrigger("attack");
         coolDownTimer = 0;
-
         plasmaBalls[FindFireBall()].transform.position = firePoint.position;
         plasmaBalls[FindFireBall()].GetComponent<Proyectil>().SetDirection(Mathf.Sign(transform.localScale.x));
     }

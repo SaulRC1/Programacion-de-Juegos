@@ -19,7 +19,7 @@ public class Proyectil : MonoBehaviour
     private void Update()
     {
         if (golpeado) return;
-        float movementSpeed = speed + Time.deltaTime * direction;
+        float movementSpeed = speed * Time.deltaTime * direction;
         transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
