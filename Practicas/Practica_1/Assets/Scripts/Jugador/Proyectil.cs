@@ -35,6 +35,11 @@ public class Proyectil : MonoBehaviour
         golpeado = true;
         boxcollider.enabled = false;
         animator.SetTrigger("explode");
+
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<Health>().TakeDamage(1);
+        }
     }
 
     public void SetDirection(float _direction)
