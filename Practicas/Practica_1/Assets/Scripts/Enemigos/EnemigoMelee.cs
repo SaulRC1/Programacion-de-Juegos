@@ -27,18 +27,19 @@ public class EnemigoMelee : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         enemigoPatrulla = GetComponentInParent<EnemigoPatrulla>();
+        
     }
 
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
-        animator.SetBool("moving", true);
-
+        animator.SetBool("run", true);
         //Attack only when player in sight
         if (PlayerInSight())
         {
+            animator.SetBool("run", false);
             if (cooldownTimer >= attackCooldown && playerHealt.currentHealth > 0)
-            {              
+            {
                 cooldownTimer = 0;
                 animator.SetTrigger("attack");
                 GestionSonido.instance.PlaySound(swordAttack);

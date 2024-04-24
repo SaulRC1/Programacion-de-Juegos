@@ -6,6 +6,12 @@ using Pathfinding;
 public class EnemyEspectroGFX : MonoBehaviour
 {
     public AIPath aiPath;
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
