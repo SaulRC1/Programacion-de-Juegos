@@ -1,0 +1,10 @@
+John=10
+Alex=9
+Jessica=8
+Freddy=7
+Thomas=6
+Maria=5
+Radovana=4
+Magdy=3
+Warda=2
+Legion=2
