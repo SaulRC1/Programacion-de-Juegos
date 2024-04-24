@@ -51,6 +51,7 @@ public class Health : MonoBehaviour
 
                 dead = true;
                 GestionSonido.instance.PlaySound(deathSound);
+                PlayerScore.incrementScore(2);
             }           
         }
     }
