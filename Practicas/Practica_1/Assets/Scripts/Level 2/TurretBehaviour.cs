@@ -21,6 +21,10 @@ public class TurretBehaviour : MonoBehaviour
     [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
 
+    [Header("Turret sound")]
+    [SerializeField] private AudioClip turretSound;
+    [SerializeField] private AudioClip plasmaBallSound;
+
     private SpriteRenderer spriteRenderer;
 
     private Animator animator;
@@ -75,6 +79,7 @@ public class TurretBehaviour : MonoBehaviour
 
     private void Attack()
     {
+        GestionSonido.instance.PlaySound(plasmaBallSound);
         coolDownTimer = 0;
         plasmaBalls[FindFireBall()].transform.position = firePoint.position;
         plasmaBalls[FindFireBall()].GetComponent<TurretPlasmaBulletBehaviour>().SetDirection(-1f);
@@ -98,8 +103,10 @@ public class TurretBehaviour : MonoBehaviour
         triggered = true;
         spriteRenderer.color = Color.red;
 
+        GestionSonido.instance.PlaySound(turretSound);
         //Esperamos por el delay de la trampa, activamos la animacion y volvemos a poner el color normal de la trampa
         yield return new WaitForSeconds(activationDelay);
+       
         spriteRenderer.color = Color.white;
         active = true;
         animator.SetBool("activated", true);

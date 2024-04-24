@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  activationDelay: 2
-  activeTime: 1
+  activationDelay: 1
+  activeTime: 2
   electricSound: {fileID: 8300000, guid: a57242b0bdbf40043b9ddef28e211e4d, type: 3}
 --- !u!95 &7839370165142696556
 Animator:
