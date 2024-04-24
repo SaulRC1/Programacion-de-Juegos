@@ -10,5 +10,10 @@ public class CambioEscena : MonoBehaviour
         {         
             SceneManager.LoadScene("Level 2");
         }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            SceneManager.LoadScene("Puntuation screen");
+        }
     }
 }
