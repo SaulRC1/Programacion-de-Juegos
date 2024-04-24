@@ -15,6 +15,9 @@ public class LaserTower : MonoBehaviour
     private bool load;
     private Health player;
 
+    [Header("Laser sound")]
+    [SerializeField] private AudioClip laserSound;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -57,6 +60,7 @@ public class LaserTower : MonoBehaviour
 
         //Esperamos por el delay de la trampa, activamos la animacion y volvemos a poner el color normal de la trampa
         yield return new WaitForSeconds(activationDelay);
+        GestionSonido.instance.PlaySound(laserSound);
         spriteRenderer.color = Color.white;
         active = true;
         animator.SetBool("activated", true);

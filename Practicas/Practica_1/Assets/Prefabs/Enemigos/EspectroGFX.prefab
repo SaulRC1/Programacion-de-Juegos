@@ -189,6 +189,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
+  swordAttack: {fileID: 8300000, guid: a5d6b2303196cb543857409b37f12a10, type: 3}
 --- !u!114 &2559617681513362365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +219,5 @@ MonoBehaviour:
   iFramesDuration: 0
   numberOffFlashes: 0
   components: []
+  deathSound: {fileID: 8300000, guid: f705c4dcf94095a459cc02266431f899, type: 3}
+  hurtSound: {fileID: 8300000, guid: 2eae934a182221e498e8e0126cf31e48, type: 3}

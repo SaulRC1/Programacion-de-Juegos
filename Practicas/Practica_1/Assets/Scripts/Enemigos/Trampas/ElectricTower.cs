@@ -15,6 +15,9 @@ public class ElectricTowe : MonoBehaviour
     private bool load;
     private Health player;
 
+    [Header("Electric sound")]
+    [SerializeField] private AudioClip electricSound;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -57,6 +60,7 @@ public class ElectricTowe : MonoBehaviour
 
         //Esperamos por el delay de la trampa, activamos la animacion y volvemos a poner el color normal de la trampa
         yield return new WaitForSeconds(activationDelay);
+        GestionSonido.instance.PlaySound(electricSound);
         spriteRenderer.color = Color.white;
         active = true;
         animator.SetBool("activated", true);

@@ -5,6 +5,7 @@ public class AtaqueJugador : MonoBehaviour
     [SerializeField] private float attackCoolDown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] plasmaBalls;
+    [SerializeField] private AudioClip plasmaBallSound;
 
     private Animator animator;
     private MovimientoJugador movimientoJugador;
@@ -28,6 +29,7 @@ public class AtaqueJugador : MonoBehaviour
 
     private void Attack()
     {
+        GestionSonido.instance.PlaySound(plasmaBallSound);
         animator.SetTrigger("attack");
         coolDownTimer = 0;
         plasmaBalls[FindFireBall()].transform.position = firePoint.position;

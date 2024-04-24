@@ -11,6 +11,9 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float velocidad;
     [SerializeField] private float jumpPower;
 
+    [Header("jump sound")]
+    [SerializeField] private AudioClip jumpSound;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -36,6 +39,10 @@ public class MovimientoJugador : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isGrounded())
         {
             Jump();
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
+            {
+                GestionSonido.instance.PlaySound(jumpSound);
+            }
         }
 
         //Set animator parameters

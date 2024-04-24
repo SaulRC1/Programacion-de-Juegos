@@ -168,3 +168,4 @@ MonoBehaviour:
   movementDistance: 3
   speed: 5
   damage: 1
+  sawSound: {fileID: 0}

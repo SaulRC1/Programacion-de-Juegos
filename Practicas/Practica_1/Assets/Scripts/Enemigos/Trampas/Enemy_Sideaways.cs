@@ -13,6 +13,7 @@ public class Enemy_Sideaways : MonoBehaviour
     {
         leftEdge = transform.position.x - movementDistance;
         rightEdge = transform.position.x + movementDistance;
+        
     }
 
     private void Update()

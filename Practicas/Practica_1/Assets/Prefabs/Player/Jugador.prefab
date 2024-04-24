@@ -180,6 +180,7 @@ MonoBehaviour:
     m_Bits: 256
   velocidad: 10
   jumpPower: 15
+  jumpSound: {fileID: 8300000, guid: bbcc3f0fa15aaff44a8983433a08869d, type: 3}
 --- !u!114 &5070000635642633855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +206,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  plasmaBallSound: {fileID: 8300000, guid: dbc98ad348d3422449497f7d2b835c53, type: 3}
 --- !u!114 &8960384383415805529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +225,8 @@ MonoBehaviour:
   components:
   - {fileID: 5070000635642633855}
   - {fileID: 8879610267733364761}
+  deathSound: {fileID: 8300000, guid: f705c4dcf94095a459cc02266431f899, type: 3}
+  hurtSound: {fileID: 8300000, guid: bde41aa670799b94899c75667d514ba0, type: 3}
 --- !u!95 &1304583806211750675
 Animator:
   serializedVersion: 5
