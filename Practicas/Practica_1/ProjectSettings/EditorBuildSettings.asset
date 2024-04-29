@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: f0e8166580a0bc940a729283ef5a3675
+  - enabled: 1
+    path: Assets/Scenes/Puntuation screen.unity
+    guid: f8afbc94a4d12b241a94ddc5f70b930b
   m_configObjects: {}

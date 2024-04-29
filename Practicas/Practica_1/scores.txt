@@ -7,4 +7,4 @@ Maria=5
 Radovana=4
 Magdy=3
 Warda=2
-Legion=2
+DEFAULT=0

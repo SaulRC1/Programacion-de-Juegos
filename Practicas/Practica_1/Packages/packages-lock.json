@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.qriva.monobehaviourtree": {
+      "version": "https://github.com/Qriva/MonoBehaviourTree.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "19b7d7906fc03a63f42d4e75651dae52d8cfff05"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,
