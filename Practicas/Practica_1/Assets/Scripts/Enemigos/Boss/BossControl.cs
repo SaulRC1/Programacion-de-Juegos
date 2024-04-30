@@ -100,7 +100,7 @@ public class BossControl : MonoBehaviour
         //GestionSonido.instance.PlaySound(plasmaBallSound);
         coolDownTimer = 0;
         plasmaBalls[FindFireBall()].transform.position = firePoint.position;
-        plasmaBalls[FindFireBall()].GetComponent<TurretPlasmaBulletBehaviour>().SetDirection(-61f);
+        plasmaBalls[FindFireBall()].GetComponent<TurretPlasmaBulletBehaviour>().SetDirection(-1f);
     }
 
     private int FindFireBall()
