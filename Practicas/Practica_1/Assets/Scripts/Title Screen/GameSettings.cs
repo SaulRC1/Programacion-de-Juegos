@@ -153,9 +153,9 @@ public class GameSettings : MonoBehaviour
         get { return timeToDefeatBossInMinutes; }
         set
         {
-            if (value < 15)
+            if (value < 1)
             {
-                timeToDefeatBossInMinutes = 15;
+                timeToDefeatBossInMinutes = 1;
             }
             else
             {

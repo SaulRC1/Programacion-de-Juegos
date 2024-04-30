@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puntuation screen.unity
     guid: f8afbc94a4d12b241a94ddc5f70b930b
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 7a1658f36e7213147ad129e692e2b8df
   m_configObjects: {}
