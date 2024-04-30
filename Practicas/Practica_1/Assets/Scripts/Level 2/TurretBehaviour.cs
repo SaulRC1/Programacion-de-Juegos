@@ -58,10 +58,10 @@ public class TurretBehaviour : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Update");
+        //Debug.Log("Update");
         if(PlayerInSight())
         {
-            Debug.Log("Detectado");
+            //Debug.Log("Detectado");
             if (!triggered)
             {
                 load = true;
@@ -131,12 +131,12 @@ public class TurretBehaviour : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Debug.Log("Jugador Detectado");
+            //Debug.Log("Jugador Detectado");
             player = hit.transform.GetComponent<Health>();
         }
         else
         {
-            Debug.Log("Jugador No Detectado");
+            //Debug.Log("Jugador No Detectado");
         }
 
         return hit.collider != null;
