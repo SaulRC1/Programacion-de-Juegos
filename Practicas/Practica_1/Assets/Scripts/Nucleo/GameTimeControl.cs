@@ -46,8 +46,8 @@ public class GameTimeControl
 
         TimeSpan timeDifference = (currentDateTime - startingGameTime).Duration();
 
-        Debug.Log("Time Difference: " + timeDifference.TotalMinutes);
-        Debug.Log("Time limit minutes: " + timeLimitMinutes);
+        //Debug.Log("Time Difference: " + timeDifference.TotalMinutes);
+        //Debug.Log("Time limit minutes: " + timeLimitMinutes);
 
         return timeDifference.TotalMinutes >= timeLimitMinutes;
     }

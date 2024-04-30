@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -47,6 +48,14 @@ public class Health : MonoBehaviour
                 foreach (Behaviour component in components)
                 {
                     component.enabled = false;
+                }
+
+                if(anim.tag == "Player")
+                {
+                    GameTimeControl gameTimeControl = GameTimeControl.GetInstance();
+                    gameTimeControl.resetGameTime();
+                    SceneManager.LoadScene("Game Over");
+                    return;
                 }
 
                 dead = true;

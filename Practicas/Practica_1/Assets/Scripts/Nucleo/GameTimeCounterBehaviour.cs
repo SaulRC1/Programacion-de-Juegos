@@ -38,6 +38,7 @@ public class GameTimeCounterBehaviour : MonoBehaviour
             {
                 gameTimeControl.resetGameTime();
                 SceneManager.LoadScene("Game Over");
+                return;
             }
         }
         
