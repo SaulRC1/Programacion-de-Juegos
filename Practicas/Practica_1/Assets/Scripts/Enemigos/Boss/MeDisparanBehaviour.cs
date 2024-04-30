@@ -10,7 +10,6 @@ public class MeDisparanBehaviour : Leaf
     public override NodeResult Execute()
     {
         animator.SetBool("duck", true);
-        //Debug.Log("Me disparan");
         return NodeResult.success;
     }      
 }

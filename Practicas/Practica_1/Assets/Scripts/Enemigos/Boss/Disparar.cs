@@ -2,14 +2,14 @@ using MBT;
 using UnityEngine;
 
 [AddComponentMenu("")]
-[MBTNode(name = "Examples/No Me Disparan")]
-public class NoMeDisparanBehavoiur : Leaf
+[MBTNode(name = "Examples/Disparar")]
+public class Disparar : Leaf
 {
     [SerializeField] private Animator animator;
 
     public override NodeResult Execute()
     {
-        animator.SetBool("duck", false);
+        animator.SetTrigger("attack");
         return NodeResult.success;
     }
 }

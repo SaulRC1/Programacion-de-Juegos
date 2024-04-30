@@ -11,7 +11,13 @@ public class BossControl : MonoBehaviour
     [SerializeField] private Blackboard blackboard;
     [SerializeField] private LayerMask proyectilesLayer;
     [SerializeField] private Animator animator;
+    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private Transform firePoint;
+    [SerializeField] private GameObject[] plasmaBalls;
+    [SerializeField] private float attackCoolDown;
+
     private System.Random rnd = new System.Random();
+    private float coolDownTimer = Mathf.Infinity;
 
     void Reset()
     {
@@ -22,7 +28,9 @@ public class BossControl : MonoBehaviour
     void Update()
     {
         playerShooting();
+        shootPlayer();    
         monoBehaviourTree.Tick();
+        coolDownTimer += Time.deltaTime;
     }
 
     void OnValidate()
@@ -49,16 +57,61 @@ public class BossControl : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                //Debug.Log("me disparan a true");
                 meDisparan.Value = true;
                 noMeDisparan.Value = false;
             }         
         }
         else
         {
-            //Debug.Log("me disparan a false");
             meDisparan.Value = false;
             noMeDisparan.Value = true;
         }
+    }
+
+    private void shootPlayer()
+    {
+        RaycastHit2D hit =
+            Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.left,
+            9f, playerLayer);
+
+        BoolVariable veoJugador = blackboard.GetVariable<BoolVariable>("veoJugador");
+
+        int num = rnd.Next(1, 11);
+
+        if (num == 1)
+        {
+            if (hit.collider != null)
+            {
+                if (coolDownTimer > attackCoolDown)
+                {
+                    Attack();
+                    veoJugador.Value = true;
+                }            
+            }
+        }
+        else
+        {
+            veoJugador.Value = false;
+        }
+    }
+
+    private void Attack()
+    {
+        //GestionSonido.instance.PlaySound(plasmaBallSound);
+        coolDownTimer = 0;
+        plasmaBalls[FindFireBall()].transform.position = firePoint.position;
+        plasmaBalls[FindFireBall()].GetComponent<TurretPlasmaBulletBehaviour>().SetDirection(-61f);
+    }
+
+    private int FindFireBall()
+    {
+        for (int i = 0; i < plasmaBalls.Length; i++)
+        {
+            if (!plasmaBalls[i].activeInHierarchy)
+            {
+                return i;
+            }
+        }
+        return 0;
     }
 }
