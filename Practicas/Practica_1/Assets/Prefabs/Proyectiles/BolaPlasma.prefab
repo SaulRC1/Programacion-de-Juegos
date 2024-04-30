@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2336052298702206196}
   - component: {fileID: 8432572150824497653}
   - component: {fileID: 578269515641317551}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BolaPlasma
-  m_TagString: Untagged
+  m_TagString: Proyectil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
