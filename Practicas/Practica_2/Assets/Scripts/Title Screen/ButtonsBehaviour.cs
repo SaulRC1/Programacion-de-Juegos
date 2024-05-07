@@ -22,6 +22,15 @@ public class ButtonsBehaviour : MonoBehaviour
     [SerializeField]
     private Button exitButton;
 
+    [SerializeField]
+    private Slider gameVolumeSlider;
+
+    [SerializeField]
+    private TMP_InputField gameTimeInputField;
+
+    [SerializeField]
+    private TMP_InputField gameRoundsInputField;
+
 
     public void startButtonOnClick()
     {
@@ -30,6 +39,14 @@ public class ButtonsBehaviour : MonoBehaviour
 
     public void settingsButtonOnClick()
     {
+        GameSettings gameSettings = GameSettings.getInstance();
+
+        gameVolumeSlider.value = gameSettings.GameVolume;
+        
+        gameTimeInputField.text = gameSettings.GameTimeInMinutes.ToString();
+
+        gameRoundsInputField.text = gameSettings.GameRounds.ToString();
+
         settingsMenu.SetActive(true);
         titleText.gameObject.SetActive(false);
         startButton.gameObject.SetActive(false);

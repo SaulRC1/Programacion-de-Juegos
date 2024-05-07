@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -32,6 +33,30 @@ public class SettingsMenuButtonsBehaviour : MonoBehaviour
 
     public void acceptButtonOnClick()
     {
+        GameSettings gameSettings = GameSettings.getInstance();
+
+        gameSettings.GameVolume = volumeSlider.value;
+
+        if(gameTimeInputField.text != null && gameTimeInputField.text.Length > 0 )
+        {
+            gameSettings.GameTimeInMinutes = Int32.Parse(gameTimeInputField.text);
+        }
+        else
+        {
+            gameSettings.GameTimeInMinutes = 15;
+        }
+
+        if (roundsInputField.text != null && roundsInputField.text.Length > 0)
+        {
+            gameSettings.GameRounds = Int32.Parse(roundsInputField.text);
+        }
+        else
+        {
+            gameSettings.GameRounds = 5;
+        }
+
+        gameSettings.storeGameSettingsIntoFile();
+
         exitSettingsMenu();
     }
 
