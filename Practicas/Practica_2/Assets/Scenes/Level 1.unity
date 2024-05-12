@@ -6749,10 +6749,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 1.5
+  m_Acceleration: 5
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 80
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -6761,6 +6761,46 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &679498984 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
+  m_PrefabInstance: {fileID: 1302661297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &679498986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679498980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d15a369f87f324c81bbe748baee4df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  animator: {fileID: 679498984}
+--- !u!65 &679498987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679498980}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &684801451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12322,7 +12362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.396851
+      value: 10.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12330,7 +12370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.6141052
+      value: -7.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12368,13 +12408,30 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f5ec754078c06ef4c8442193a855a384, type: 2}
+    - target: {fileID: 5866666021909216657, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig10:Hips'\n\tTransform 'mixamorig10:Neck'\n\tTransform
+        'mixamorig10:RightHandIndex2'\n\tTransform 'mixamorig10:Spine'\n\tTransform
+        'mixamorig10:RightHandThumb3'\n\tTransform 'mixamorig10:RightHandRing2'\n\tTransform
+        'mixamorig10:LeftHandPinky1'\n\tTransform 'mixamorig10:RightHandThumb2'\n\tTransform
+        'mixamorig10:LeftHandRing2'\n\tTransform 'mixamorig10:RightHandThumb1'\n\tand
+        more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 679498986}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 679498983}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 679498987}
   m_SourcePrefab: {fileID: 100100000, guid: a0ffd3ac45387bf4d9d7c59582c12146, type: 3}
 --- !u!1001 &1312572676
 PrefabInstance:
@@ -14070,7 +14127,7 @@ GameObject:
   - component: {fileID: 1466966427}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
