@@ -6,6 +6,12 @@ public class EnemyCore : MonoBehaviour
 {
     public int HP = 100;
     public Animator animator;
+    private EnemySpawner spawner;
+
+    void Start()
+    {
+        spawner = FindObjectOfType<EnemySpawner>();
+    }
 
     public void takeDamage(int damage)
     {
@@ -15,6 +21,10 @@ public class EnemyCore : MonoBehaviour
             //Activar animacion de muerte
             animator.SetTrigger("die");
             GetComponent<Collider>().enabled = false;
+            if (spawner != null)
+            {
+                spawner.EnemyDestroyed();
+            }
         } 
         else
         {
