@@ -31,11 +31,15 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    void SpawnEnemy()
+    public GameObject SpawnEnemy()
     {
+        //int spawnIndex = Random.Range(0, spawnPoints.Length);
+        //Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        //currentEnemyCount++;
         int spawnIndex = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        GameObject newEnemy = Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
         currentEnemyCount++;
+        return newEnemy;
     }
 
     public void EnemyDestroyed()

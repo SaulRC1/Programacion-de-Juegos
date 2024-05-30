@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class EnemyCore : MonoBehaviour
 {
-    public int HP = 100;
     public Animator animator;
     private EnemySpawner spawner;
+
+    public int damageGene;
+    public int lifeGene;
 
     void Start()
     {
@@ -15,8 +17,8 @@ public class EnemyCore : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        HP -= damage;
-        if (HP <= 0 )
+        lifeGene -= damage;
+        if (lifeGene <= 0 )
         {
             //Activar animacion de muerte
             animator.SetTrigger("die");
@@ -31,5 +33,12 @@ public class EnemyCore : MonoBehaviour
             //Activar animacion de golpe
             animator.SetTrigger("damage");
         }
+    }
+
+    // Añade un método para inicializar los genes
+    public void InitializeGenes(int damage, int life)
+    {
+        this.damageGene = damage;
+        this.lifeGene = life;
     }
 }
