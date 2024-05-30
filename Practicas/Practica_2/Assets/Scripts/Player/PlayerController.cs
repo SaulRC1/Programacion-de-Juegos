@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour
 
         moveDirection = new Vector3(moveX, 0, moveZ);
         moveDirection = moveDirection.normalized;
+        moveDirection = transform.TransformDirection(moveDirection);
 
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
