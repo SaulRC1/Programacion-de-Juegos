@@ -26,9 +26,11 @@
 
 using UnityEngine;
 using System.Collections;
+using Assets.Scripts.Player;
+using TMPro;
 
 // This script handles the behaviour of the weapon as hole.
-public class WeaponCtrl : MonoBehaviour
+public class WeaponCtrl : MonoBehaviour, WeaponStatusListener
 {
 	public GameObject CartridgesPrefab;
 	public float CartridgeExpulsionForce = 5;
@@ -43,6 +45,18 @@ public class WeaponCtrl : MonoBehaviour
 	private CartridgeSpawnPoint _cartridgeSpawPoint;
 	private ShootSpawnPoint _shootSpawnPoint;
 	private SpotLightSpawnPoint _spotlightSpawnPoint;
+
+	private WeaponStatistics weaponStatistics;
+
+	[Header("Weapon Statistics")]
+	[SerializeField] private bool infiniteAmmo;
+	[SerializeField] private int maximumAmmo;
+
+	[Header("Weapon HUD")]
+	[SerializeField] private TMP_Text weaponHud;
+
+	[Header("Weapon Sounds")]
+	[SerializeField] private AudioSource reloadSound;
 	
 	void Awake()
 	{
@@ -77,8 +91,13 @@ public class WeaponCtrl : MonoBehaviour
 		}
 		if (_spotlightSpawnPoint != null)
 		{
-			_spotlightSpawnPoint.Setup(SpotLightPrefab.gameObject);
+			//_spotlightSpawnPoint.Setup(SpotLightPrefab.gameObject);
 		}
+
+        weaponStatistics = new WeaponStatistics(ReloadAmount, maximumAmmo, ReloadAmount, infiniteAmmo);
+        weaponStatistics.AddListener(this);
+
+        Reload();
 	}
 	
 	public void EnableFocus()
@@ -110,7 +129,9 @@ public class WeaponCtrl : MonoBehaviour
 	{
 		// Add the indicated bullets
 		// TODO: Add this as another prefab so the weapon known nothing about this.
+		reloadSound.Play();
 		CurrentAmunition = ReloadAmount;
+		weaponStatistics.Reload();
 	}
 	
 	public void DoShoot()
@@ -122,6 +143,7 @@ public class WeaponCtrl : MonoBehaviour
 			if (_shootSpawnPoint != null)
 			{
 				_shootSpawnPoint.DoShoot();
+				weaponStatistics.Shoot();
 			}
 		}
 		else
@@ -130,4 +152,51 @@ public class WeaponCtrl : MonoBehaviour
 			// TODO: make empty cartridge noise?
 		}
 	}
+
+    private void Update()
+    {
+		if(Input.GetKeyDown(KeyCode.R))
+		{
+			Reload();
+		}
+
+        if(Input.GetMouseButtonDown(0)) 
+		{
+			DoShoot();
+		}
+    }
+
+    public void OnWeaponReload()
+    {
+        string weaponHUDText = ReloadAmount.ToString();
+
+        if (infiniteAmmo)
+        {
+            weaponHUDText += "/\u221E";
+
+        }
+        else
+        {
+            weaponHUDText += "/" + maximumAmmo.ToString();
+        }
+
+        weaponHud.SetText(weaponHUDText);
+    }
+
+    public void onWeaponShot()
+    {
+        string weaponHUDText = weaponStatistics.Ammo.ToString();
+
+        if (infiniteAmmo)
+        {
+            weaponHUDText += "/\u221E";
+
+        }
+        else
+        {
+            weaponHUDText += "/" + maximumAmmo.ToString();
+        }
+
+        weaponHud.SetText(weaponHUDText);
+    }
 }

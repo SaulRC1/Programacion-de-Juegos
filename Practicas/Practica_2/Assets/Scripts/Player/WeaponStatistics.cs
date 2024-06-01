@@ -10,15 +10,17 @@ namespace Assets.Scripts.Player
     {
         private int ammo;
         private int maxAmmo;
+        private int magazineAmmo;
 
         private bool infiniteAmmo;
 
         private List<WeaponStatusListener> listeners;
 
-        public WeaponStatistics(int ammo, int maxAmmo, bool infiniteAmmo)
+        public WeaponStatistics(int ammo, int maxAmmo, int magazineAmmo, bool infiniteAmmo)
         {
             this.ammo = ammo;
             this.maxAmmo = maxAmmo;
+            this.magazineAmmo = magazineAmmo;
             this.infiniteAmmo = infiniteAmmo;
         }
 
@@ -38,6 +40,36 @@ namespace Assets.Scripts.Player
         {
             get { return infiniteAmmo; }
             set { infiniteAmmo = value; }
+        }
+
+        public void Reload()
+        {
+            ammo = magazineAmmo;
+            
+            foreach (WeaponStatusListener listener in listeners) 
+            {
+                listener.OnWeaponReload();
+            }
+        }
+
+        public void Shoot()
+        {
+            ammo--;
+
+            foreach (WeaponStatusListener listener in listeners)
+            {
+                listener.onWeaponShot();
+            }
+        }
+
+        public void AddListener(WeaponStatusListener listener) 
+        {
+            if(listeners == null) 
+            {
+                listeners = new List<WeaponStatusListener>();
+            }
+
+            listeners.Add(listener);
         }
     }
 }
