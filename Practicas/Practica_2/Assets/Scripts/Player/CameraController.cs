@@ -10,6 +10,9 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     private Transform body;
 
+    [SerializeField]
+    private Transform camera;
+
     private float xRot;
 
     private void Start()
@@ -30,6 +33,7 @@ public class CameraController : MonoBehaviour
         xRot -= mouseY;
         xRot = Mathf.Clamp(xRot, -90, 90);
 
+        camera.localRotation = Quaternion.Euler(new Vector3(xRot, 0, 0));
         body.Rotate(new Vector3(0, mouseX, 0));
     }
 

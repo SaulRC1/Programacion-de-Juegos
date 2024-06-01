@@ -62,9 +62,9 @@ public class PlayerController : MonoBehaviour
 
     private void handleJumping()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && isCharacterGrounded)
         {
-            velocity.y += Mathf.Sqrt(jumpForce * -2f * gravity);
+            velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
     }
 
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
     private void handleIsGrounded()
     {
-        isCharacterGrounded = Physics.CheckSphere(transform.position, groundDistance);
+        isCharacterGrounded = Physics.CheckSphere(transform.position, groundDistance, groundMask);
     }
 
     private void handleRunning()
