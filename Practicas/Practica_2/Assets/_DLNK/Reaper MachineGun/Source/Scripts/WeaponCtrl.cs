@@ -54,6 +54,7 @@ public class WeaponCtrl : MonoBehaviour, WeaponStatusListener
 
 	[Header("Weapon HUD")]
 	[SerializeField] private TMP_Text weaponHud;
+	[SerializeField] private Camera camera;
 
 	[Header("Weapon Sounds")]
 	[SerializeField] private AudioSource reloadSound;
@@ -142,6 +143,26 @@ public class WeaponCtrl : MonoBehaviour, WeaponStatusListener
 			CurrentAmunition -= 1;
 			if (_shootSpawnPoint != null)
 			{
+				Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
+				RaycastHit hit;
+				float weaponRange = 100;
+
+				if(Physics.Raycast(ray, out hit, weaponRange)) 
+				{
+					GameObject hitGameObject = hit.transform.gameObject;
+
+					if (hitGameObject != null) 
+					{
+						EnemyCore enemyCore = hitGameObject.GetComponent<EnemyCore>();
+
+						if (enemyCore != null) 
+						{
+							Debug.Log("Enemy hit");
+							enemyCore.takeDamage(1);
+						}
+					}
+				}
+
 				_shootSpawnPoint.DoShoot();
 				weaponStatistics.Shoot();
 			}
