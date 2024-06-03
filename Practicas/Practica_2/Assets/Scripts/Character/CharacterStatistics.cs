@@ -21,7 +21,7 @@ public class CharacterStatistics
 
     public void CheckHealth()
     {
-        Debug.Log("Health: " + health);
+        //Debug.Log("Health: " + health);
         if(health <= 0)
         {
             health = 0;

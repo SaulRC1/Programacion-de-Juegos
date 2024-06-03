@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab; // El prefab del enemigo
-    public Transform[] spawnPoints; // Puntos donde pueden aparecer los enemigos
-    public float spawnInterval = 5f; // Tiempo entre cada spawn de enemigo
-    public int maxEnemies = 20; // Límite máximo de enemigos
+    [SerializeField] public GameObject enemyPrefab; // El prefab del enemigo
+    [SerializeField] public Transform[] spawnPoints; // Puntos donde pueden aparecer los enemigos
+    [SerializeField] public float spawnInterval; // Tiempo entre cada spawn de enemigo
+    private GenecticAlgorithm ga;
 
     private float timer;
     private int currentEnemyCount = 0;
 
+
     void Start()
     {
         timer = spawnInterval;
+        ga = FindObjectOfType<GenecticAlgorithm>();
     }
 
     void Update()
@@ -23,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (timer <= 0)
         {
-            if (currentEnemyCount < maxEnemies)
+            if (currentEnemyCount < ga.populationSize)
             {
                 SpawnEnemy();
             }
@@ -33,11 +35,17 @@ public class EnemySpawner : MonoBehaviour
 
     public GameObject SpawnEnemy()
     {
-        //int spawnIndex = Random.Range(0, spawnPoints.Length);
-        //Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
-        //currentEnemyCount++;
         int spawnIndex = Random.Range(0, spawnPoints.Length);
         GameObject newEnemy = Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+       
+        BoxCollider enemyBoxCollider = newEnemy.GetComponent<BoxCollider>();
+        if (enemyBoxCollider != null)
+        {
+            newEnemy.SetActive(true);
+            Debug.Log("Generando enemigos");
+            enemyBoxCollider.enabled = true;
+        }
+
         currentEnemyCount++;
         return newEnemy;
     }

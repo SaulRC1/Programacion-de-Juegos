@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour, ICharacterStatusListener
     {
         if (nextHealthBarHealIndex >= 0 && nextHealthBarHealIndex <= 7)
         {
-            Debug.Log("Healed");
+            //Debug.Log("Healed");
             Image healthTank = healthBar[nextHealthBarHealIndex];
 
             healthTank.gameObject.SetActive(true);
@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour, ICharacterStatusListener
     {
         if(nextHealthBarDamageIndex >= 0 && nextHealthBarDamageIndex <= 7)
         {
-            Debug.Log("Damaged");
+            //Debug.Log("Damaged");
             Image healthTank = healthBar[nextHealthBarDamageIndex];
 
             healthTank.gameObject.SetActive(false);

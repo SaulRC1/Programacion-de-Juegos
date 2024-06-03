@@ -45,8 +45,8 @@ public class AttackState : StateMachineBehaviour
 
                     if (playerController != null && lastTimePlayerHit.AddSeconds(playerHitDelayInSeconds).CompareTo(DateTime.Now) <= 0)
                     {
-                        Debug.Log("Player hit");
-                        playerController.characterStatistics.TakeDamage(1);
+                        //Debug.Log("Player hit");
+                        playerController.characterStatistics.TakeDamage(animator.transform.gameObject.GetComponent<EnemyCore>().damageGene);
                         lastTimePlayerHit = DateTime.Now;
                     }
                 }

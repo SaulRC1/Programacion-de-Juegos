@@ -157,7 +157,7 @@ public class WeaponCtrl : MonoBehaviour, WeaponStatusListener
 
 						if (enemyCore != null) 
 						{
-							Debug.Log("Enemy hit");
+							//Debug.Log("Enemy hit");
 							enemyCore.takeDamage(1);
 						}
 					}

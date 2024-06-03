@@ -28,7 +28,7 @@ public class GameTimeCounterBehaviour : MonoBehaviour
 
         if (remainingTime == GameTimeCounter.NO_REMAINING_TIME)
         {
-            SceneManager.LoadScene("Game Over Screen");
+            SceneManager.LoadScene("Score Screen");
             return;
         }
 

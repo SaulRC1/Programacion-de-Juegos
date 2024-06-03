@@ -8,7 +8,7 @@ public class PlayerScore : MonoBehaviour
 
     public static void incrementScore(int scoreIncrement)
     {
-        score = scoreIncrement;
+        score += scoreIncrement;
         Debug.Log("Current score: " + score);
     }
 }
