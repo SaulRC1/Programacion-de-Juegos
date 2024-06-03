@@ -16064,7 +16064,7 @@ GameObject:
   - component: {fileID: 1466966424}
   - component: {fileID: 1466966423}
   - component: {fileID: 1466966427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -16154,15 +16154,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466966422}
-  m_LocalRotation: {x: 0.0057658684, y: -0.70627695, z: 0.0038381973, w: 0.7079018}
-  m_LocalPosition: {x: 10.87, y: 1.59, z: -0.49999908}
+  m_LocalRotation: {x: 0.0067265336, y: -0.99910814, z: -0.0016524987, w: -0.041653894}
+  m_LocalPosition: {x: 10.93, y: 1.52, z: 21.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1356878266}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0.778, y: -89.869, z: -0.155}
+  m_LocalEulerAnglesHint: {x: -0.221, y: -184.773, z: -0.762}
 --- !u!114 &1466966427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16185,6 +16185,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   isCharacterGrounded: 0
+  healthBar:
+  - {fileID: 1621156088}
+  - {fileID: 387719014}
+  - {fileID: 968176752}
+  - {fileID: 1746835454}
+  - {fileID: 819099121}
+  - {fileID: 1922794377}
+  - {fileID: 379124807}
+  - {fileID: 1163110635}
 --- !u!1 &1474225678
 GameObject:
   m_ObjectHideFlags: 0

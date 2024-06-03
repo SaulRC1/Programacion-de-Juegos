@@ -14,13 +14,14 @@ public class CharacterStatistics
 
     public CharacterStatistics(int health, int maxHealth, bool isDead)
     {
-        Health = health;
         this.maxHealth = maxHealth;
+        Health = health;
         this.isDead = isDead;
     }
 
     public void CheckHealth()
     {
+        Debug.Log("Health: " + health);
         if(health <= 0)
         {
             health = 0;

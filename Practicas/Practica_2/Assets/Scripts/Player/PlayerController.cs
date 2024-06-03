@@ -1,8 +1,12 @@
+using Assets.Scripts.Character;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ICharacterStatusListener
 {
     [SerializeField]
     private float moveSpeed;
@@ -34,12 +38,25 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 moveDirection = Vector3.zero;
 
+    public CharacterStatistics characterStatistics;
+
+    [Header("Character Statistics")]
+    [SerializeField] private Image[] healthBar;
+    private int nextHealthBarDamageIndex = 7;
+    private int nextHealthBarHealIndex = 7;
+
+    private DateTime lastTimePlayerHealed = DateTime.Now;
+    private int playerHealDelayInSeconds = 10;
+
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
 
         moveSpeed = walkSpeed;
+
+        characterStatistics = new CharacterStatistics(8, 8, false);
+        characterStatistics.AddCharacterStatusListener(this);
     }
 
     // Update is called once per frame
@@ -53,6 +70,12 @@ public class PlayerController : MonoBehaviour
 
         handleRunning();
         handleMovement();
+
+        if(lastTimePlayerHealed.AddSeconds(playerHealDelayInSeconds).CompareTo(DateTime.Now) <= 0)
+        {
+            characterStatistics.Heal(1);
+            lastTimePlayerHealed = DateTime.Now;
+        }
     }
 
     private void getReferences()
@@ -107,5 +130,54 @@ public class PlayerController : MonoBehaviour
         moveDirection = transform.TransformDirection(moveDirection);
 
         characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
+    }
+
+    public void OnCharacterDeath()
+    {
+        SceneManager.LoadScene("Game Over Screen");
+    }
+
+    public void onCharacterHealed()
+    {
+        if (nextHealthBarHealIndex >= 0 && nextHealthBarHealIndex <= 7)
+        {
+            Debug.Log("Healed");
+            Image healthTank = healthBar[nextHealthBarHealIndex];
+
+            healthTank.gameObject.SetActive(true);
+
+            if(nextHealthBarHealIndex < 7)
+            {
+                nextHealthBarDamageIndex = nextHealthBarHealIndex;
+                nextHealthBarHealIndex++;
+            }
+            else
+            {
+                nextHealthBarDamageIndex = 7;
+                nextHealthBarHealIndex = 7;
+            }
+        }
+    }
+
+    public void onCharacterDamaged()
+    {
+        if(nextHealthBarDamageIndex >= 0 && nextHealthBarDamageIndex <= 7)
+        {
+            Debug.Log("Damaged");
+            Image healthTank = healthBar[nextHealthBarDamageIndex];
+
+            healthTank.gameObject.SetActive(false);
+
+            if(nextHealthBarDamageIndex > 0) 
+            {
+                nextHealthBarHealIndex = nextHealthBarDamageIndex;
+                nextHealthBarDamageIndex--;
+            }
+            else
+            {
+                nextHealthBarHealIndex = 0;
+                nextHealthBarDamageIndex = 0;
+            }
+        }
     }
 }
