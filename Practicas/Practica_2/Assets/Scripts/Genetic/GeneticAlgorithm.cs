@@ -92,7 +92,7 @@ public class GenecticAlgorithm : MonoBehaviour
 
     void Mutate(GameObject enemy)
     {
-        if (Random.Range(0f, 1f) <= mutationRate)
+        if (Random.Range(0f, 2f) <= mutationRate)
         {
             EnemyCore genes = enemy.GetComponent<EnemyCore>();
             genes.damageGene = Random.Range(0, 10);
