@@ -11,4 +11,9 @@ public class PlayerScore : MonoBehaviour
         score += scoreIncrement;
         Debug.Log("Current score: " + score);
     }
+
+    public static void resetScore()
+    {
+        score = 0;
+    }
 }

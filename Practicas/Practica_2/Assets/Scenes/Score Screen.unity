@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45143b2700e648643a648c5c4e571a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Score Screen
+  sceneName: Title Screen
   nameInputField: {fileID: 1019828454}
 --- !u!1 &416146162
 GameObject:
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 436924845}
   - component: {fileID: 436924844}
   m_Layer: 5
-  m_Name: ColumnaTiempo
+  m_Name: ColumnaNombre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Intento
+  m_text: Nombre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89990f26bda301840a60cc663b90c89d, type: 2}
   m_sharedMaterial: {fileID: 7354896763100314180, guid: 89990f26bda301840a60cc663b90c89d, type: 2}
@@ -2376,7 +2376,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -335.37, y: -163.1368}
+  m_SizeDelta: {x: -172, y: -163.13678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1220495302
 MonoBehaviour:
@@ -3924,7 +3924,7 @@ GameObject:
   - component: {fileID: 1815202848}
   - component: {fileID: 1815202847}
   m_Layer: 5
-  m_Name: ColumnaIntento
+  m_Name: ColumnaPuntuacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3947,7 +3947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 187.2618, y: 142.56}
+  m_AnchoredPosition: {x: 146.9, y: 142.56}
   m_SizeDelta: {x: 271.9615, y: 48.888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1815202847
@@ -3970,7 +3970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tiempo
+  m_text: "PUNTUACI\xD3N"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89990f26bda301840a60cc663b90c89d, type: 2}
   m_sharedMaterial: {fileID: 7354896763100314180, guid: 89990f26bda301840a60cc663b90c89d, type: 2}
@@ -4033,7 +4033,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -92.44287, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

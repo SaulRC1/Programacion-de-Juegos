@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Xml;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class ScoreReader : MonoBehaviour
 {
@@ -66,9 +69,19 @@ public class ScoreReader : MonoBehaviour
 
             streamWriter = new StreamWriter("scores.txt");
 
-            foreach (KeyValuePair<string, string> entry in scores)
+            List<KeyValuePair<string, string>> orderedScores = scores.ToList();
+
+            orderedScores.Sort((pair1, pair2) =>
             {
-                streamWriter.WriteLine(entry.Key + "=" + entry.Value);
+                int score1 = Int32.Parse(pair1.Value);
+                int score2 = Int32.Parse((pair2.Value));
+
+                return score2.CompareTo(score1);
+            });
+
+            foreach (KeyValuePair<string, string> scorer in orderedScores)
+            {
+                streamWriter.WriteLine(scorer.Key + "=" + scorer.Value);
             }
         }
         catch (Exception e)

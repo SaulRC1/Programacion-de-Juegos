@@ -135,6 +135,7 @@ public class PlayerController : MonoBehaviour, ICharacterStatusListener
     public void OnCharacterDeath()
     {
         SceneManager.LoadScene("Game Over Screen");
+        PlayerScore.resetScore();
     }
 
     public void onCharacterHealed()

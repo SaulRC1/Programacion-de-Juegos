@@ -14,29 +14,37 @@ public class EndGameBehaviour : MonoBehaviour
     [SerializeField]
     private TMP_InputField nameInputField;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void endGame()
     {
-        int lowest = Int32.MaxValue;
-        string lowestScorer = "";
+        string immediatelyLowerKey = null;
 
         foreach (KeyValuePair<string, string> entry in ScoreReader.scores)
         {
-            if(Int32.Parse(entry.Value) <= lowest)
+            if (Int32.Parse(entry.Value) <= PlayerScore.score)
             {
-                lowestScorer = entry.Key;
+                Debug.Log("Examining: " + entry.Key + " | " + entry.Value);
+                immediatelyLowerKey = entry.Key;
             }
         }
 
-        Debug.Log("Lowest Scorer: " + lowestScorer);
+        Debug.Log("Immediately Lower Scorer: " + immediatelyLowerKey);
 
-        ScoreReader.scores.Remove(lowestScorer);
-
-        if(nameInputField.text == null || nameInputField.text.Length == 0 )
+        if (immediatelyLowerKey != null)
         {
-            nameInputField.text = "DEFAULT";
-        }
+            ScoreReader.scores.Remove(immediatelyLowerKey);
 
-        ScoreReader.scores.Add(nameInputField.text, PlayerScore.score.ToString());
+            if (nameInputField.text == null || nameInputField.text.Length == 0)
+            {
+                nameInputField.text = "DEFAULT";
+            }
+
+            ScoreReader.scores.Add(nameInputField.text, PlayerScore.score.ToString());
+        }
 
         ScoreReader.storeScoresIntoFile();
         SceneManager.LoadScene(sceneName);
