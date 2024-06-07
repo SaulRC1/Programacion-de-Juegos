@@ -29,30 +29,6 @@ public class ChaseState : StateMachineBehaviour
         {
             animator.SetBool("isAttacking", true);
         }
-
-        /*float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance > 15)
-        {
-            animator.SetBool("isRunning", false);
-        }
-        else if (distance < 2.5f)
-        {
-            animator.SetBool("isAttacking", true);
-        }
-        else
-        {
-            // Actualiza el destino solo si el agente aún no ha alcanzado la posición del jugador
-            if (agent.remainingDistance > agent.stoppingDistance)
-            {
-                agent.SetDestination(player.position);
-            }
-            else
-            {
-                // Detén el movimiento y la rotación del agente si ya está cerca del jugador
-                agent.velocity = Vector3.zero;
-                agent.angularSpeed = 0f;
-            }
-        }*/
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
